@@ -45,7 +45,7 @@ for keyword in chosen_keywords:
     processed_keyword = process_keyword(keyword)
     completed_text = grab_completed_text(processed_keyword)
     file_open = open("openai-completed-description.txt", 'a')
-    file_open.write(f'<b>{processed_keyword}<b>\n\n')
+    file_open.write(f'<b>{processed_keyword}</b>\n\n')
 
     file_open.write(completed_text)
     file_open.write("\n\n")
