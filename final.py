@@ -1,7 +1,9 @@
 import openai
 
 #use your own OpenAI API key
-openai.api_key = 'YOU_API_KEY'
+# openai.api_key = 'YOU_API_KEY'
+
+openai.api_key = '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'
 
 
 
@@ -29,10 +31,11 @@ chosen_keywords = []
 file_open_paan = open('people-also-ask.txt', 'r')
 chosen_keywords = file_open_paan.read().splitlines()
 original_keyword_untrimmed = chosen_keywords[0].split(' ')
-original_keyword =  original_keyword_untrimmed[1]
-introduction = 'Introduction about ' + original_keyword
-conclusion = 'Conclusion about ' + original_keyword
+original_keyword =  " ".join(original_keyword_untrimmed[1:])
 chosen_keywords.pop(0)
+
+#removes previous texts from the file 'openai-completed-descriptions.txt'
+open('openai-completed-description.txt', 'w').close()
 
 # completes the introduction query
 introduction_query = "Write an article introduction about "  + original_keyword
