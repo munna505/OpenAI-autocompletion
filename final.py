@@ -1,7 +1,7 @@
 import openai
 
 #use your own OpenAI API key
-# openai.api_key = 'YOU_API_KEY'
+openai.api_key = 'YOU_API_KEY'
 
 
 
