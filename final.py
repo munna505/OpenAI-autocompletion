@@ -35,7 +35,7 @@ conclusion = 'Conclusion about ' + original_keyword
 chosen_keywords.pop(0)
 
 # completes the introduction query
-introduction_query = input("Input your query for the introduction. For example, write an article introduction about bicycles.\n::- ")
+introduction_query = "Write an article introduction about "  + original_keyword
 processed_keyword =  introduction_query + original_keyword
 openai_completed_introduction =  grab_completed_text(processed_keyword)
 file_open = open("openai-completed-description.txt", 'a')
@@ -52,7 +52,7 @@ for keyword in chosen_keywords:
     file_open.write("\n\n")
 
 # completes the conclusion query
-conclusion_query = input("Input your query for the introduction. For example, write a conclusion  about bicycles.\n::- ")
+conclusion_query = "Write an article conclusion about "  + original_keyword
 processed_keyword =  conclusion_query + original_keyword
 openai_completed_introduction =  grab_completed_text(processed_keyword)
 file_open = open("openai-completed-description.txt", 'a')
