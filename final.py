@@ -11,7 +11,7 @@ def grab_completed_text(stext):
           engine="text-davinci-002",
           prompt=stext,
           temperature=0.7,
-          max_tokens=200,
+          max_tokens=4000,
           top_p=1,
           frequency_penalty=0,
           presence_penalty=0

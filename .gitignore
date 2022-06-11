@@ -3,3 +3,5 @@ Scripts
 chromedriver.exe
 Lib
 pyvenv.cfg
+tryopen.py
+tryopen.txt
