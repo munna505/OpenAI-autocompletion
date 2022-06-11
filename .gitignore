@@ -2,3 +2,4 @@ Include
 Scripts
 chromedriver.exe
 Lib
+pyvenv.cfg
