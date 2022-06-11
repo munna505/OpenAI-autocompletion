@@ -1,10 +1,7 @@
 import openai
 
 #use your own OpenAI API key
-# openai.api_key = 'YOU_API_KEY'
-
-openai.api_key = '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'
-
+openai.api_key = 'YOU_API_KEY'
 
 
 #OpenAI completes your keywords
