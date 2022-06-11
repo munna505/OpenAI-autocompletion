@@ -1,7 +1,7 @@
 import openai
 
 #use your own OpenAI API key
-openai.api_key = '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'
+openai.api_key = 'YOU-API-KEY'
 
 
 #add query to the original string
